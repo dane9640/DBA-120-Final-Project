@@ -1,0 +1,26 @@
+/* Your CSS goes here */
+body {
+  display: flex;
+  flex-flow: column;
+  margin: auto;
+  text-align: center;
+  
+}
+
+a {
+  text-decoration: none;
+}
+
+nav ul {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+}
+
+nav ul li{
+  padding: .5rem;
+}
+table {
+  margin: auto;
+  text-align: center;
+}
