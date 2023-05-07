@@ -25,3 +25,22 @@
 
  ## Update OP
  ![Update Links](repo-assets/Update-Links.png)
+ Here are the links to edit/update the records
+ ![Update Form](repo-assets/Update-Form.png)
+ This is the Form that the link brings you to. It pre-populates the fields with their current information and you can then edit as needed
+
+ ## Delete OP
+ ![Delete Links](repo-assets/Delete-Links.png)
+ Here are the links that take you to a form to delete a record
+ ![Delete Form](repo-assets/Delete-Form.png)
+ Here is a form that uses a POST request to confirm the
+ deletion
+ ![Post Delete Table](repo-assets/Post-Delete-Table.png)
+ The form then goes back to read the whole table. Note that the deleted record is no longer there.
+
+
+ # Closing Notes
+ I only did some VERY light styling and the pages aren't really responsive yet. I intend on fleshing out the styling as well as maybe implement some javascript to improve the experience of viewing records with filters and such.
+
+ Everyone is Free to use and distribute this code.
+
