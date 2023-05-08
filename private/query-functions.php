@@ -12,14 +12,14 @@
     global $db;
 
     if($table === "Books") {
-      $sql = "SELECT books.Book_ID, books.Title, authors.FirstName, authors.LastName, genres.Name, genres.Description FROM $table ";
-      $sql .= "INNER JOIN authors ON books.Author_ID = authors.Author_ID ";
-      $sql .= "INNER JOIN genres ON books.Genre_ID = genres.Genre_ID ";
+      $sql = "SELECT Books.Book_ID, Books.Title, Authors.FirstName, Authors.LastName, Genres.Name, Genres.Description FROM $table ";
+      $sql .= "INNER JOIN Authors ON Books.Author_ID = Authors.Author_ID ";
+      $sql .= "INNER JOIN Genres ON Books.Genre_ID = Genres.Genre_ID ";
       $sql .= "ORDER BY Title ASC";
     } else if($table === "Loans") {
-      $sql = "SELECT books.Title, members.FirstName, members.LastName, loans.CheckoutDate, loans.DueDate, loans.Loan_ID FROM $table ";
-      $sql .= "INNER JOIN books ON loans.Book_ID = books.Book_ID ";
-      $sql .= "INNER JOIN members ON loans.Member_ID = members.Member_ID ";
+      $sql = "SELECT Books.Title, Members.FirstName, Members.LastName, Loans.CheckoutDate, Loans.DueDate, Loans.Loan_ID FROM $table ";
+      $sql .= "INNER JOIN Books ON Loans.Book_ID = Books.Book_ID ";
+      $sql .= "INNER JOIN Members ON Loans.Member_ID = Members.Member_ID ";
       $sql .= "ORDER BY CheckoutDate ASC";
     } else {
       $sql = "SELECT * FROM $table ";
@@ -61,16 +61,16 @@
     global $db;
 
     if($table === "Books") {
-      $sql = "SELECT books.Book_ID, books.Title, authors.FirstName, authors.LastName, genres.Name FROM $table ";
-      $sql .= "INNER JOIN authors ON books.Author_ID = authors.Author_ID ";
-      $sql .= "INNER JOIN genres ON books.Genre_ID = genres.Genre_ID ";
-      $sql .= "WHERE books.Book_ID='".$id."'";
+      $sql = "SELECT Books.Book_ID, Books.Title, Authors.FirstName, Authors.LastName, Genres.Name FROM $table ";
+      $sql .= "INNER JOIN Authors ON Books.Author_ID = Authors.Author_ID ";
+      $sql .= "INNER JOIN Genres ON Books.Genre_ID = Genres.Genre_ID ";
+      $sql .= "WHERE Books.Book_ID='".$id."'";
 
     } else if($table === "Loans") {
-      $sql = "SELECT books.Book_ID, books.Title, members.FirstName, members.LastName, members.Member_ID, loans.CheckoutDate, loans.DueDate, loans.Loan_ID FROM $table ";
-      $sql .= "INNER JOIN books ON loans.Book_ID = books.Book_ID ";
-      $sql .= "INNER JOIN members ON loans.Member_ID = members.Member_ID ";
-      $sql .= "WHERE loans.Loan_ID='".$id."'";
+      $sql = "SELECT Books.Book_ID, Books.Title, Members.FirstName, Members.LastName, Members.Member_ID, Loans.CheckoutDate, Loans.DueDate, Loans.Loan_ID FROM $table ";
+      $sql .= "INNER JOIN Books ON Loans.Book_ID = Books.Book_ID ";
+      $sql .= "INNER JOIN Members ON Loans.Member_ID = Members.Member_ID ";
+      $sql .= "WHERE Loans.Loan_ID='".$id."'";
     } else {
       $sql = "SELECT * FROM $table ";
     }
