@@ -35,19 +35,19 @@
 
     if($table === "Books") {
       $sql = "SELECT * FROM $table ";
-      $sql .= "WHERE books.Book_ID='".$id."'";
+      $sql .= "WHERE Books.Book_ID='".$id."'";
     } else if ($table === "Genres"){
       $sql = "SELECT * FROM $table ";
-      $sql .= "WHERE genres.Genre_ID='".$id."'";
+      $sql .= "WHERE Genres.Genre_ID='".$id."'";
     } else if ($table === "Authors"){
       $sql = "SELECT * FROM $table ";
-      $sql .= "WHERE authors.Author_ID='".$id."'";
+      $sql .= "WHERE Authors.Author_ID='".$id."'";
     } else if ($table === "Members"){
       $sql = "SELECT * FROM $table ";
-      $sql .= "WHERE members.Member_ID='".$id."'";
+      $sql .= "WHERE Members.Member_ID='".$id."'";
     } else if ($table === "Loans"){
       $sql = "SELECT * FROM $table ";
-      $sql .= "WHERE loans.Loan_ID='".$id."'";
+      $sql .= "WHERE Loans.Loan_ID='".$id."'";
     } else {
       $sql = "SELECT * FROM $table ";
     }
