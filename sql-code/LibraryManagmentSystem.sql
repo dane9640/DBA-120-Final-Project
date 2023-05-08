@@ -1,6 +1,4 @@
-DROP DATABASE IF EXISTS LibraryManagementSystem;
-
-CREATE DATABASE LibraryManagementSystem;
+CREATE DATABASE Library_Management_System;
 USE LibraryManagementSystem;
 
 CREATE TABLE Authors (
