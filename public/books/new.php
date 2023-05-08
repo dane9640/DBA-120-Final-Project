@@ -4,8 +4,8 @@
 
   $pageTitle = "Add Book";
 
-  $genres = findAllItems("genres");
-  $authors = findAllItems("authors");
+  $genres = findAllItems("Genres");
+  $authors = findAllItems("Authors");
 
   include(SHARED_PATH."/header.php");
 ?>
