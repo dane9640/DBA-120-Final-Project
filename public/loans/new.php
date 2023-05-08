@@ -2,8 +2,8 @@
   require_once("../../private/initialize.php");
 
   $pageTitle = "Checkout Book";
-  $books = findAllItems("books");
-  $members = findAllItems("members");
+  $books = findAllItems("Books");
+  $members = findAllItems("Members");
 
 
   include(SHARED_PATH."/header.php");

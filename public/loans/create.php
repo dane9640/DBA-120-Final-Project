@@ -1,6 +1,6 @@
 <?php
   require_once("../../private/initialize.php");
-  $table = "loans";
+  $table = "Loans";
 
   if(isPostRequest()){
     $loan = array('Member_ID'=>$_POST['member'],'Book_ID'=>$_POST['book'], 'CheckoutDate'=>$_POST['checkoutDate']);

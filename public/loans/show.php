@@ -7,7 +7,7 @@
   
   $id = $_GET['id'];
 
-  $loans = findItemByIDJoined("loans", $id);
+  $loans = findItemByIDJoined("Loans", $id);
 
 ?>
 

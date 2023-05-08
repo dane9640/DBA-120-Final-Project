@@ -1,6 +1,6 @@
 <?php
   require_once("../../private/initialize.php");
-  $table = "books";
+  $table = "Books";
   $genres = findAllItems("genres");
   $authors = findAllItems("authors");
   

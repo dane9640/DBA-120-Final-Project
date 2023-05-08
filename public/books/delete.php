@@ -1,13 +1,13 @@
 <?php
   require_once("../../private/initialize.php");
-  $table = "books";
+  $table = "Books";
 
   if(!isset($_GET['id'])){
     redirectTo(urlFor('books/index.php'));
   }
   $id = $_GET['id'];
 
-  $book = findItemByIDJoined("books",$id);
+  $book = findItemByIDJoined($table,$id);
   
   if(isPostRequest()){
     $result = deleteItem($table, $book);

@@ -1,6 +1,6 @@
 <?php
   require_once("../../private/initialize.php");
-  $table = "books";
+  $table = "Books";
 
   if(isPostRequest()){
     $book = array('Title'=>$_POST['title'],'Genre'=>$_POST['genre'],'Author'=>$_POST['author']);

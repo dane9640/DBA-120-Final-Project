@@ -1,6 +1,6 @@
 <?php
   require_once("../../private/initialize.php");
-  $table = "genres";
+  $table = "Genres";
   
   $id = $_GET['id'];
   $genreID = mysqli_fetch_assoc(findItemByID($table,$id))['Genre_ID'];

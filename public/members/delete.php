@@ -1,6 +1,6 @@
 <?php
   require_once("../../private/initialize.php");
-  $table = "members";
+  $table = "Members";
 
   if(!isset($_GET['id'])){
     redirectTo(urlFor('members/index.php'));

@@ -7,7 +7,7 @@
   
   $id = $_GET['id'];
 
-  $books = findItemByIDJoined("books", $id);
+  $books = findItemByIDJoined("Books", $id);
 
 ?>
 

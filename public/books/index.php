@@ -2,7 +2,7 @@
   require("../../private/initialize.php");
 
   //Database table associated with page
-  $pageTable = "books";
+  $pageTable = "Books";
   //Query to find all items from the associated table
   $dbItems = findAllItems($pageTable);
 

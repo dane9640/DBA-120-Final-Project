@@ -7,7 +7,7 @@
   
   $id = $_GET['id'];
 
-  $authors = mysqli_fetch_assoc(findItemByID("authors", $id));
+  $authors = mysqli_fetch_assoc(findItemByID("Authors", $id));
 
 ?>
 

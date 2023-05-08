@@ -1,6 +1,6 @@
 <?php
   require_once("../../private/initialize.php");
-  $table = "genres";
+  $table = "Genres";
 
   if(isPostRequest()){
     $genre = array('Name'=>$_POST['name'],'Description'=>$_POST['description']);

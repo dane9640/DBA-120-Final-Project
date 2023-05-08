@@ -1,6 +1,6 @@
 <?php
   require_once("../../private/initialize.php");
-  $table = "authors";
+  $table = "Authors";
   
   $id = $_GET['id'];
   $authorID = mysqli_fetch_assoc(findItemByID($table,$id))['Author_ID'];

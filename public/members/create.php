@@ -1,6 +1,6 @@
 <?php
   require_once("../../private/initialize.php");
-  $table = "members";
+  $table = "Members";
 
   if(isPostRequest()){
     $member = array('FirstName'=>$_POST['firstName'],'LastName'=>$_POST['lastName'], 'Email'=>$_POST['email'], 'PhoneNumber'=>$_POST['phoneNumber']);

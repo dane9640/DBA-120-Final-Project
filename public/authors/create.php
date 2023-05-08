@@ -1,6 +1,6 @@
 <?php
   require_once("../../private/initialize.php");
-  $table = "authors";
+  $table = "Authors";
 
   if(isPostRequest()){
     $author = array('FirstName'=>$_POST['firstName'],'LastName'=>$_POST['lastName']);

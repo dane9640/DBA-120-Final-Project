@@ -7,7 +7,7 @@
   
   $id = $_GET['id'];
 
-  $genres = mysqli_fetch_assoc(findItemByID("genres", $id));
+  $genres = mysqli_fetch_assoc(findItemByID("Genres", $id));
 
 ?>
 

@@ -7,7 +7,7 @@
   
   $id = $_GET['id'];
 
-  $members = mysqli_fetch_assoc(findItemByID("members", $id));
+  $members = mysqli_fetch_assoc(findItemByID("Members", $id));
 
 ?>
 

@@ -1,8 +1,6 @@
 <?php
   require_once("../../private/initialize.php");
 
-  $test = $_GET['test'] ?? '';
-
   $pageTitle = "Add Author";
 
 
